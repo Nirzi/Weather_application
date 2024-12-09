@@ -14,3 +14,7 @@
 - plyer
 - Git и GitHub
 - PyInstaller
+
+
+Ссылка на гит
+https://github.com/Nirzi/Weather_application

@@ -2,7 +2,7 @@ import requests
 from plyer import notification
 
 API_KEY = "ef209120327b90dd8e685562d563a3a5"  # Ваш API ключ
-CITY = "Москва"  # Город по умолчанию
+DEFAULT_CITY = "Москва"  # Город по умолчанию
 
 def get_weather(city: str, api_key: str) -> dict:
     """
@@ -49,12 +49,18 @@ def notify_weather(message: str) -> None:
 
 def main():
     try:
-        weather_data = get_weather(CITY, API_KEY)
+        city = input(f"Введите название города (по умолчанию '{DEFAULT_CITY}'): ") or DEFAULT_CITY
+        weather_data = get_weather(city, API_KEY)
         weather_message = format_weather_message(weather_data)
         print(weather_message)  # Отобразим в консоли
         notify_weather(weather_message)  # Отправим уведомление
     except Exception as e:
-        print(f"Произошла ошибка: {e}")
+        error_message = f"Произошла ошибка: {e}"
+        print(error_message)
+        with open("error_log.txt", "w", encoding="utf-8") as f:
+            f.write(error_message)
+    finally:
+        input("Нажмите Enter для выхода...")
 
 if __name__ == "__main__":
     main()
