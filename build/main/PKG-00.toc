@@ -7,10 +7,8 @@
   'PYMODULE': True,
   'PYSOURCE': True,
   'PYZ': False,
-  'SPLASH': True,
-  'SYMLINK': False},
- [('pyi-contents-directory _internal', '', 'OPTION'),
-  ('PYZ-00.pyz',
+  'SPLASH': True},
+ [('PYZ-00.pyz',
    'C:\\Vse_vaznoe\\программирование\\проекты по '
    'обучению\\Weather_application\\build\\main\\PYZ-00.pyz',
    'PYZ'),
@@ -50,6 +48,10 @@
    'C:\\Program '
    'Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\\python311.dll',
    'BINARY'),
+  ('VCRUNTIME140.dll',
+   'C:\\Program '
+   'Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\\VCRUNTIME140.dll',
+   'BINARY'),
   ('_decimal.pyd',
    'C:\\Program '
    'Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\\DLLs\\_decimal.pyd',
@@ -66,10 +68,6 @@
    'C:\\Program '
    'Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\\DLLs\\_bz2.pyd',
    'EXTENSION'),
-  ('unicodedata.pyd',
-   'C:\\Program '
-   'Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\\DLLs\\unicodedata.pyd',
-   'EXTENSION'),
   ('select.pyd',
    'C:\\Program '
    'Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\\DLLs\\select.pyd',
@@ -82,13 +80,17 @@
    'C:\\Program '
    'Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\\DLLs\\_ctypes.pyd',
    'EXTENSION'),
-  ('_queue.pyd',
+  ('unicodedata.pyd',
    'C:\\Program '
-   'Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\\DLLs\\_queue.pyd',
+   'Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\\DLLs\\unicodedata.pyd',
    'EXTENSION'),
   ('_ssl.pyd',
    'C:\\Program '
    'Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\\DLLs\\_ssl.pyd',
+   'EXTENSION'),
+  ('_queue.pyd',
+   'C:\\Program '
+   'Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\\DLLs\\_queue.pyd',
    'EXTENSION'),
   ('charset_normalizer\\md__mypyc.cp311-win_amd64.pyd',
    'C:\\Vse_vaznoe\\программирование\\проекты по '
@@ -98,10 +100,6 @@
    'C:\\Vse_vaznoe\\программирование\\проекты по '
    'обучению\\Weather_application\\venv\\Lib\\site-packages\\charset_normalizer\\md.cp311-win_amd64.pyd',
    'EXTENSION'),
-  ('VCRUNTIME140.dll',
-   'C:\\Program '
-   'Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\\VCRUNTIME140.dll',
-   'BINARY'),
   ('libcrypto-3.dll',
    'C:\\Program '
    'Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\\DLLs\\libcrypto-3.dll',
@@ -118,15 +116,14 @@
    'C:\\Vse_vaznoe\\программирование\\проекты по '
    'обучению\\Weather_application\\build\\main\\base_library.zip',
    'DATA'),
-  ('certifi\\cacert.pem',
-   'C:\\Vse_vaznoe\\программирование\\проекты по '
-   'обучению\\Weather_application\\venv\\Lib\\site-packages\\certifi\\cacert.pem',
-   'DATA'),
   ('certifi\\py.typed',
    'C:\\Vse_vaznoe\\программирование\\проекты по '
    'обучению\\Weather_application\\venv\\Lib\\site-packages\\certifi\\py.typed',
+   'DATA'),
+  ('certifi\\cacert.pem',
+   'C:\\Vse_vaznoe\\программирование\\проекты по '
+   'обучению\\Weather_application\\venv\\Lib\\site-packages\\certifi\\cacert.pem',
    'DATA')],
- 'python311.dll',
  False,
  False,
  False,

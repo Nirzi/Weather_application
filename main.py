@@ -1,5 +1,6 @@
 import requests
 from plyer import notification
+from datetime import datetime
 
 API_KEY = "ef209120327b90dd8e685562d563a3a5"  # Ваш API ключ
 DEFAULT_CITY = "Москва"  # Город по умолчанию
@@ -26,12 +27,27 @@ def format_weather_message(weather_dict: dict) -> str:
     feels_like = weather_dict['main']['feels_like']
     description = weather_dict['weather'][0]['description']
     city_name = weather_dict['name']
+    humidity = weather_dict['main']['humidity']
+    pressure = weather_dict['main']['pressure']
+    wind_speed = weather_dict['wind']['speed']
+    
+    # Данные о восходе и закате
+    sunrise_unix = weather_dict['sys']['sunrise']
+    sunset_unix = weather_dict['sys']['sunset']
+    # Конвертация Unix времени в локальное время
+    sunrise_time = datetime.fromtimestamp(sunrise_unix).strftime('%H:%M:%S')
+    sunset_time = datetime.fromtimestamp(sunset_unix).strftime('%H:%M:%S')
     
     message = (
         f"Город: {city_name}\n"
         f"Температура: {temp}°C\n"
         f"Ощущается как: {feels_like}°C\n"
-        f"Описание: {description}"
+        f"Описание: {description}\n"
+        f"Влажность: {humidity}%\n"
+        f"Давление: {pressure} гПа\n"
+        f"Скорость ветра: {wind_speed} м/с\n"
+        f"Восход: {sunrise_time}\n"
+        f"Закат: {sunset_time}"
     )
     return message
 
@@ -43,7 +59,6 @@ def notify_weather(message: str) -> None:
         title="Прогноз погоды",
         message=message,
         app_name="Weather App",
-        # app_icon="weather.ico",  # при необходимости можно указать иконку
         timeout=10
     )
 
